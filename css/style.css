@@ -13,28 +13,55 @@
     color: var(--main-color);
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    
-   
+.main-container {
+    width: 1440;
+    gap: 30px;
 }
 
+body {
+    margin: 1px 0px;
+    display: flex;
+    justify-content: center;
+  width: 1440px;
+   padding-right: 50px;
+   padding-left: 50px;
+   gap: 35px;
+}
+
+
+
 h1 {
-    font-size: 24px;
-    font-weight: bold;
+    height: 26px;
+    width: 1340px;
+    font-size: 22px;
+    font-weight: 700;
     margin: 0 auto;
     
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    
 }
-p{
+
+ p{
+    margin: 8px 0px;
     font-size:16px;
     color: #2a2a2a;
-    font-weight: 500;
+    font-weight: 400;
+    height: 19px;
     
+}
+
+.headline   {
+    width: 1340px;
+    height: 53px;
+    gap: 8px;
 }
 /* header */
 
 .navbar{
+    width: 1425px;
+    height: 79px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +70,10 @@ p{
 }
 
 .bookiLogo img{
-    width: 40%;
+    width: 61.09px;
+    height: 19px;
+    top: 30px;
+    left: 50px;
 }
 
 
@@ -54,15 +84,25 @@ margin-bottom: 50px;
 }
 nav ul {
 
-list-style: none;
+/* list-style: none;
 display: flex;
 gap: 30px;
 margin: 0;
-padding: 0;
+padding: 0; */
+
+width: 335px;
+padding-right: 50px;
+padding-left: 50px;
+left: 1055px;
+gap: 68px;
+display: flex;
+
 }
 
 nav ul li {
     display: inline;
+    font-weight: 400;
+    size: 16px;
 }
 
 nav ul li a{
@@ -88,7 +128,11 @@ nav ul li a:hover{
     text-align: left;
     padding: 40px 20px;
     max-width: 600px;
-    margin: 0 auto;
+    width: 1340px;
+    height: 281px;
+    gap: 35px;
+    
+   
 }
 
 /* SEARCH BOX */
@@ -109,7 +153,7 @@ nav ul li a:hover{
 
 .search-box .location-icon {
     font-size:22px;
-    border-radius: 30px 0 0 30px;
+    border-radius: 15px 0 0 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,9 +189,11 @@ nav ul li a:hover{
     font-weight: bold;
     border: none;
     padding: 15px 15px;
-    border-radius: 0 30px 30px 0;
+    /* border-radius: 0 30px 30px 0; */
     cursor: pointer;
     font-size:18px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
    
 }
 
@@ -164,7 +210,7 @@ nav ul li a:hover{
 /* FILTERS */
 .filters {
     display: flex;
-    gap: 10px;
+    gap: 5px;
     justify-content: left;
     margin-top: 20px;
     margin-bottom: 25px;
@@ -216,17 +262,14 @@ margin-top: 5px;
 /* AVAILABILITY INFO */
 .availability-info {
     margin-top: 15px;
+    margin-bottom: 25px;
     
     /* color: #777; */
 }
 
 
 /* > project < standard */
-.main-container {
-    width: 80%;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
+
 
 .section-title {
     margin: 0;
@@ -234,6 +277,7 @@ margin-top: 5px;
 }
 
 .card {
+    
     background-color: white;
     border-radius: 20px;
     padding: 5px;
@@ -246,6 +290,7 @@ margin-top: 5px;
 
 .card-title {
     font-size: 16px;
+    margin-bottom: 8px;
 }
 
 .euro {
@@ -260,6 +305,7 @@ margin-top: 5px;
 .accommodation-and-popular {
     display: flex;
     justify-content:space-between;  
+    width: 1340px;
 }
 
 .accommodation-and-popular section {
@@ -271,44 +317,69 @@ margin-top: 5px;
 
 /* Accommodation */
 .accommodation {
-    width: 65%;
+    width: 871px;
+    height: 614px;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 15px;
    
+}
+
+.accommodation-title {
+ width: 811px;
+ height: 26px;
+font-size: 22px;
+font-weight: 700;
+margin-bottom: 33px;
 }
 .accommodation .popular-cards {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px; /* Space between cards */
     align-items:  start; 
+    margin-top: 0;
 }
-.accommodation .popular-cards .card {
+.accommodation .popular-cards .paris-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 20px;
     padding: 5px;
-    margin-top:33px;
+    padding-bottom: 0px;
+    /* margin-top:5px; */
     margin-bottom: 0px;
     overflow: hidden; 
+    background-color: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 240px;
+    height: 197px;
     
 }
 
+.accommodation .popular-cards .card-title {
+margin-top: 0;
+margin-bottom: 4px;
+}
+
 /* Accommodation Images (Full Width, Fixed Height) */
-.accommodation .popular-cards .card img {
-    width: 100%;
-    height: 150px; 
+.accommodation .popular-cards .paris-card img {
+    width: 240px;
+    height: 114px; 
     object-fit: cover;
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px 15px 0 0;
+   
 }
 /* Text Content Inside Accommodation Cards */
 .accommodation .popular-cards .card-content {
-    padding: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
 }
+
+
 
 .show-more {
     grid-column: 1 / span 3; /* Stretch across all columns */
@@ -316,11 +387,16 @@ margin-top: 5px;
     font-weight: bold;
     cursor: pointer;
     margin-top: 10px;
-    width: 20%;
+    margin-bottom: 30px;
+    width: 15%;
 }
 /****** Popular ***********/
 .popular {
-    width: 32%;
+    width: 429px;
+    height: 614px;
+    padding: 30px;
+    gap: 30px;
+    border-radius: 15px;
 }
 
 .popular-title {
@@ -329,35 +405,47 @@ margin-top: 5px;
     align-items: center;
 }
 
+.popular-cards{
+
+    width: 369px;
+    height: 498px;
+    gap: 30px;
+    margin: 0;
+}
 .popular-cards .card {
     display: flex;
     margin-top: 33px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
 }
 
 .popular-cards img {
     width: 33%;
     height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .popular-cards .card-content {
-    width: 67%;
+    width: 250px;
     padding-left: 15px;
+    /* padding-right: 15px;
+    gap: 8px; */
+
     display: flex;
     flex-direction:column;
     justify-content: space-between;
     box-sizing: border-box;
 }
 
-.popular-cards .card-title {
+.popular-cards {
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
 .popular-cards .card-subtitle {
     margin: 0;
+    font-size: 14px;
 }
 
 .popular-cards .card-rating {
